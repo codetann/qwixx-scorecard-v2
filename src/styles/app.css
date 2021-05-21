@@ -1,0 +1,270 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overscroll-behavior: none;
+}
+
+#warning {
+  display: none;
+}
+
+.board {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100vh;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .4rem;
+}
+
+.number {
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  background: #ffffffda;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.disabled {
+  opacity: .2;
+}
+
+.toggled {
+  border: 2px solid white;
+  background: #ffffff31;
+}
+
+.toggled p {
+  color: white !important;
+}
+
+.bottom-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 .3rem;
+}
+
+.penalties {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 20vh;
+  padding: .3rem;
+}
+
+.penalty-button {
+  width: 4rem;
+  height: 4rem;
+  background: #ffffffda;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: .5rem;
+  cursor: pointer;
+  border: 2px solid black;
+  margin: 0 .3rem;
+}
+
+.endgame-button {
+  height: 4rem;
+  width: 10rem;
+  border-radius: 1rem;
+  background: red;
+  border: 1px solid red;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.endgame-button:hover {
+  opacity: .6;
+}
+
+.confirm {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: #1d1d1dbb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  left: 0;
+}
+
+.confirm-box {
+  height: 11rem;
+  width: 20rem;
+  padding: 1rem;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.confirm-box button {
+  width: 6rem;
+  height: 3rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.score-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #1d1d1dbb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.score-page .scores-box {
+  height: 10rem;
+  width: 30rem;
+  padding: 1rem;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 1rem;
+}
+
+.score-page .scores-box .scores {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.score-page .scores-box div {
+  height: 3rem;
+  width: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.score-page .scores-box button {
+  height: 3rem;
+  width: 100%;
+  border-radius: 1rem;
+  border: 1px solid #01a1d1;
+  color: white;
+  background: #01a1d1;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media only screen and (orientation: portrait) {
+  .board {
+    display: none;
+  }
+  #warning {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    height: 100vh;
+  }
+}
+
+#container {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+/*# sourceMappingURL=app.css.map */
