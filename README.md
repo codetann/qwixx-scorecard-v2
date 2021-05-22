@@ -1,8 +1,9 @@
 # Qwixx Scorecard
 
-This is passion project. We ran out of scorecards for the board game Qwixx and did not want to order more.
+This is passion project. My family ran out of Qwixx score cards and we didnt want to go through the process of ordering more. So naturally I had
+to make a web app for it.
 
-One of the main benifits of using an online scorecard is the positive effect it will have on the environment. Paper saved is a tree saved.
+One of the main benifits of using an online scorecard is the positive effect it will have on the environment. Paper Saved = Happy Earth.
 
 ## disclaimer
 
