@@ -25,6 +25,7 @@ export default function Number({
     tempBoard.selectNumber(color, number);
     setGame(tempBoard);
   };
+
   return (
     <button
       disabled={disabled}
@@ -32,7 +33,13 @@ export default function Number({
       onClick={handleClick}
       className="number"
     >
-      <p style={{ color: hex }}>{number}</p>
+      {number === 0 && (
+        <i
+          style={{ color: toggled ? "white" : hex }}
+          class={toggled || disabled ? "fas fa-lock" : "fas fa-lock-open"}
+        ></i>
+      )}
+      {number !== 0 && <p style={{ color: hex }}>{number}</p>}
     </button>
   );
 }
