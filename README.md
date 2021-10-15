@@ -7,6 +7,8 @@ to make a web app for it.
 
 One of the main benifits of using an online scorecard is the positive effect it will have on the environment. Paper Saved = Happy Earth.
 
+This application is also a PWA. Allowing you to install it to your homescreen for offline use.
+
 ## disclaimer
 
 I do not own the rights to this game. All rights belong to © GAMEWRIGHT
